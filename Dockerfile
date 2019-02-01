@@ -10,6 +10,7 @@ RUN docker-php-ext-install pcntl
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install exif
 RUN docker-php-ext-install sockets
+RUN docker-php-ext-install mongodb
 
 RUN apk add imagemagick-dev
 RUN apk add autoconf
