@@ -3,7 +3,7 @@ FROM php:7.1-fpm-alpine
 RUN apk add zlib-dev
 RUN docker-php-ext-install zip
 
-RUN apk add libpng-dev
+RUN apk add libpng-dev libjpeg-turbo-dev
 RUN docker-php-ext-install gd
 
 RUN docker-php-ext-install pcntl
