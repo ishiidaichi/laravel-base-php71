@@ -22,5 +22,6 @@ RUN docker-php-ext-install sockets
 RUN apk add autoconf
 RUN apk add g++
 RUN apk add make
+RUN apk add openssl-dev
 RUN pecl install mongodb
 RUN docker-php-ext-enable mongodb
